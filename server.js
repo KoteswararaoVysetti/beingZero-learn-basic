@@ -1,8 +1,7 @@
 const express = require('express');
  
 const app = express();
- app.use(express.static(__dirname+"/1stcss.css"));
- app.use(express.static(__dirname+"/1stjs.js"));
+ app.use(express.static(__dirname+"/fend"));
 app.get("/", function(req, res){
     res.send("Welcome");
 })
